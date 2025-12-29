@@ -1,144 +1,178 @@
-
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police propre sans-serif */
-    color: #333;
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Police propre sans-serif */
+	color: #333;
 }
 
 /* --- Section Principale --- */
 .testimonial-section {
-    position: relative; 
-    background-color: #f0fbff; 
-    padding: 100px 20px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden; 
+	position: relative;
+	background-color: #f0fbff;
+	padding: 100px 20px;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
 }
 
 /* --- Cercles Décoratifs --- */
 .circle-decoration {
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1; 
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
 }
 
 /* Cercle Vert (Haut Gauche) */
 .circle-top-left {
-    width: 250px;
-    height: 250px;
-    background-color: #55ccb6; 
-    top: -100px;
-    left: -80px;
+	width: 250px;
+	height: 250px;
+	background-color: #55ccb6;
+	top: -100px;
+	left: -80px;
 }
 
 /* Cercle Gris/Bleu (Bas Droite) */
 .circle-bottom-right {
-    width: 350px;
-    height: 350px;
-    background-color: #5a6b7c; 
-    bottom: -150px;
-    right: -100px;
+	width: 350px;
+	height: 350px;
+	background-color: #5a6b7c;
+	bottom: -150px;
+	right: -100px;
 }
 
 /* --- Conteneur Central --- */
 .content-wrapper {
-    position: relative;
-    z-index: 2; 
-    max-width: 800px;
-    margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 /* --- Titre --- */
 h2 {
-    color: #5a6b7c; 
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+	color: #5a6b7c;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
 }
 
 /* --- Bloc Citation --- */
 .quote-block {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2c3e50;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    padding: 0 20px;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #2c3e50;
+	line-height: 1.6;
+	margin-bottom: 40px;
+	padding: 0 20px;
 }
 
 .quote-mark {
-    color: #95a5a6; 
-    font-size: 1.5em;
-    vertical-align: bottom;
-    margin: 0 5px;
+	color: #95a5a6;
+	font-size: 1.5em;
+	vertical-align: bottom;
+	margin: 0 5px;
 }
 
 /* --- Badge Utilisateur (Bulle verte) --- */
 .badge-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 
 .user-badge {
-    background-color: #55ccb6;
-    color: white;
-    padding: 8px 25px;
-    border-radius: 50px; 
-    font-size: 0.9rem;
-    font-weight: bold;
-    position: relative; 
-    display: inline-block;
+	background-color: #55ccb6;
+	color: white;
+	padding: 8px 25px;
+	border-radius: 50px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
 }
 
 /* CRÉATION DE LA FLÈCHE (Triangle du haut) */
 .user-badge::before {
-    content: "";
-    position: absolute;
-    top: -8px; 
-    left: 50%;
-    transform: translateX(-50%); 
-    
-    /* Astuce CSS pour faire un triangle */
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #55ccb6; 
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	/* Astuce CSS pour faire un triangle */
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #55ccb6;
 }
 
 /* --- Rangée d'Avatars --- */
 .avatars-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Espace entre les images */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px; /* Espace entre les images */
 }
 
 .avatar {
-    opacity: 0.5;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    border: 3px solid transparent;
-    transition: transform 0.2s ease;
-    background-color: #ddd; 
+	opacity: 0.5;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
+	border: 3px solid transparent;
+	transition: transform 0.2s ease;
+	background-color: #ddd;
 }
 
 /* Effet au survol */
 .avatar:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    border:  #55ccb6 3px solid;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	opacity: 1;
+	transform: scale(1.1);
+	border: #55ccb6 3px solid;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style optionnel : mettre en avant le dernier avatar (Bob) par défaut */
 .avatar:last-child {
-    transform: scale(1.1);
-    border: 2px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	transform: scale(1.1);
+	border: 2px solid #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* section 3 start */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.features {
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+}
+
+.features p {
+	font-size: 30px;
+	margin-bottom: 30px;
+	color: #666;
+}
+
+.items {
+	display: flex;
+	justify-content: center;
+	gap: 80px;
+	flex-wrap: wrap;
+}
+
+.items .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+/* section 3 end */
